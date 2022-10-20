@@ -31,7 +31,7 @@ class Marathon {
         this.date = date;
     }
     result() {
-        return "Marathon: " + this.date.toLocaleDateString() + " min " + this.date.toLocaleDateString() + " s";
+        return "Marathon: " + this.date.getMinutes() + " min " + this.date.getSeconds() + " s";
     }
 }
 class Calvinball {
@@ -60,7 +60,7 @@ _Calvinball_winner = new WeakMap();
 let eredmenyek = [
     new Calvinball("Calvin", new Date()),
     new Calvinball("Hobbes", new Date()),
-    new Marathon("futo", new Date()),
+    new Marathon("futo", new Date(2022, 10, 10, 10, 3, 50)),
     new Football("Real madrid", 4, 3, new Date()),
 ];
 for (let elem of eredmenyek) {
