@@ -89,10 +89,15 @@ let eredmenyek : Results[] = [
     new Football("Real madrid", 4,3, new Date()),
 ];
 
-for (let elem of eredmenyek)
+/*for (let elem of eredmenyek)
 {
     console.log(elem.result());
-}
+}*/
 
+for (let elem of eredmenyek)
+{
+    if (elem.winner == "Calvin"){
+    console.log(elem.result());}
+}
 
 
